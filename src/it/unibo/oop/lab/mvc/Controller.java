@@ -1,10 +1,11 @@
 package it.unibo.oop.lab.mvc;
 
+import java.util.List;
+
 /**
  * A controller that prints strings and has memory of the strings it printed.
  */
 public interface Controller {
-
     /*
      * This interface must model a simple controller responsible of I/O access. It
      * considers only the standard output, and it is able to print on it.
@@ -24,5 +25,8 @@ public interface Controller {
      * an IllegalStateException should be thrown
      * 
      */
-
+    void setNextStringToPrint(String nextString);
+    String getNextStringToPrint();
+    List<String> getPrintedStringsHistory();
+    void printCurrentString();
 }
