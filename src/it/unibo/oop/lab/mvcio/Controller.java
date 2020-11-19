@@ -38,7 +38,7 @@ public class Controller {
      */
      public File getCurrentFile() {
          return dest;
-     
+     }
      public String getCurrentFilePath() { 
          return dest.getPath();
      }
